@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-17T23:21:55 MST" name="Default suite" finished-at="2024-01-17T23:22:22 MST" duration-ms="27388">
+    <groups>
+    </groups>
+    <test started-at="2024-01-17T23:21:55 MST" name="Default test" finished-at="2024-01-17T23:22:22 MST" duration-ms="27388">
+      <class name="woong.AppiumStudy.Miscellaneous">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:woong.AppiumStudy.Miscellaneous@194fad1]" started-at="2024-01-17T23:21:55 MST" name="configureAppium" finished-at="2024-01-17T23:22:04 MST" duration-ms="9509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="MiscellaneousDemo()[pri:0, instance:woong.AppiumStudy.Miscellaneous@194fad1]" started-at="2024-01-17T23:22:04 MST" name="MiscellaneousDemo" finished-at="2024-01-17T23:22:21 MST" duration-ms="16831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MiscellaneousDemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:woong.AppiumStudy.Miscellaneous@194fad1]" started-at="2024-01-17T23:22:21 MST" name="tearDown" finished-at="2024-01-17T23:22:22 MST" duration-ms="991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- woong.AppiumStudy.Miscellaneous -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
