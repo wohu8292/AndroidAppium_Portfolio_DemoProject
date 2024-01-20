@@ -25,13 +25,14 @@ public class BaseTest {
 	
 	@BeforeClass
 	public void configureAppium() throws MalformedURLException {
-		service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\gjdnd\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+		service = new AppiumServiceBuilder().withAppiumJS(new File("C:/Users/gjdnd/AppData/Roaming/npm/node_modules/appium/build/lib/main.js"))
 		.withIPAddress("127.0.0.1").usingPort(4723).build();
 		service.start();
 		
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("practiceEmulator");
-		options.setApp("C:/Users/gjdnd/Desktop/selenium/AppiumStudy/src/test/java/resources/ApiDemos-debug.apk");
+//		options.setApp("C:/Users/gjdnd/Desktop/selenium/AppiumStudy/src/test/java/resources/ApiDemos-debug.apk");
+		options.setApp("C:/Users/gjdnd/Desktop/selenium/AppiumProject/src/test/java/resources/General-Store.apk");
 		
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -41,6 +42,11 @@ public class BaseTest {
 		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture", 
 				ImmutableMap.of("elementId", ((RemoteWebElement) element).getId(),
 						"duration",2000));
+	}
+	
+	public Double getFormattedAmount(String amountString) {
+		Double Price = Double.parseDouble(amountString.substring(1));
+		return Price;
 	}
 	
 	@AfterClass

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="woong.AppiumStudy.Miscellaneous">
+      <class name="woong.AppiumStudy.eCommerce_tc_4">
         <methods>
           <include name="configureAppium"/>
-          <include name="MiscellaneousDemo"/>
+          <include name="FillFrom"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- woong.AppiumStudy.Miscellaneous -->
+      </class> <!-- woong.AppiumStudy.eCommerce_tc_4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
